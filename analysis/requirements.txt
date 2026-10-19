@@ -1,0 +1,5 @@
+# analysis/ scripts (Python 3.11): beat grid, vocal separation, per-character lyric timing
+numpy
+librosa
+soundfile
+demucs

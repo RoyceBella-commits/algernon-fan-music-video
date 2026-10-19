@@ -1,0 +1,8 @@
+# art/ scripts (Python 3.11): keying, upscaling, tree growth, cover preview
+numpy
+pillow
+opencv-python-headless
+scipy
+scikit-image
+torch
+spandrel

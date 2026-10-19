@@ -1,0 +1,45 @@
+# ---- Copyrighted material: never commit ----------------------------------------------------
+# The song, anything decoded or separated from it, and its lyrics.
+*.flac
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.lrc
+audio/
+data/*
+!data/README.md
+# Lyric text restored locally by `npm run lyrics -- merge <lyrics.lrc>`
+story/src/data/lyrics.local.json
+story/public/audio/
+story/build/
+# Local notes that quote lyrics (the public storyboard is docs/storyboard.md)
+/storyboard.md
+/视频简介*.md
+
+# ---- Renders --------------------------------------------------------------------------------
+out/
+samples/
+/cover/
+*.mp4
+*.mov
+
+# ---- Regenerable copies & downloads ---------------------------------------------------------
+# copied from art/raw by `npm run sync`
+story/public/img/raw/
+# `npm run fonts`
+story/public/fonts/
+# Real-ESRGAN weights (see README)
+art/models/
+tools/
+
+# ---- Image-generation logs (session ids, local paths) ---------------------------------------
+art/logs/
+
+# ---- Environments & caches ------------------------------------------------------------------
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+._*

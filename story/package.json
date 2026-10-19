@@ -1,0 +1,23 @@
+{
+  "name": "algernon-mv",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "studio": "remotion studio",
+    "sync": "zsh scripts/sync-assets.sh",
+    "fonts": "zsh scripts/fetch-fonts.sh",
+    "lyrics": "node scripts/lyrics.mjs",
+    "render": "remotion render MV ../out/mv_silent.mp4 --crf=16 --muted",
+    "cover": "remotion still Cover ../out/cover.png"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.532",
+    "@remotion/google-fonts": "^4.0.532",
+    "@remotion/media-utils": "^4.0.532",
+    "@types/react": "^18.3.31",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.532",
+    "typescript": "^7.0.2"
+  }
+}
